@@ -1,0 +1,40 @@
+{
+  "name": "pil-wordpress",
+  "version": "1.0.0",
+  "description": "pil-wordpress",
+  "main": "",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "author": "Nicolas Jamar",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/register": "^7.8.3",
+    "autoprefixer": "^9.7.4",
+    "browser-sync": "^2.27.7",
+    "cssnano": "^5.0.14",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-deporder": "^1.1.0",
+    "gulp-line-ending-corrector": "^1.0.3",
+    "gulp-newer": "^1.4.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-strip-debug": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^1.0.4",
+    "postcss": "^8.2.15",
+    "postcss-assets": "^5.0.0",
+    "run-sequence": "^2.2.1",
+    "sass": "^1.45.2"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
