@@ -24,3 +24,19 @@ function add_theme_js()
   );
 }
 add_action('wp_enqueue_scripts', 'add_theme_js');
+
+// Options page in Admin dashboard
+// -> allows the data to be displayed on any pages
+if (function_exists('acf_add_options_page')) {
+
+  acf_add_options_page(array(
+    'menu_title'  => 'Footer',
+    'page_title'   => 'Footer Data',
+    'menu_slug'   => 'footer',
+  ));
+  acf_add_options_page(array(
+    'menu_title'  => 'Header',
+    'page_title'   => 'Header Data',
+    'menu_slug'   => 'header',
+  ));
+}
