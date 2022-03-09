@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'Coiff</title>
+    <?php wp_head(); // required to build the file as a custom header ?>
   </head>
 
   <body>
     <header class="header">
+      <h1 class="hidden">LCoiff'</h1>
+
       <nav class="navbar">
         <ul class="navbar__list">
           <li class="navbar__list__element">

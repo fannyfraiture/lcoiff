@@ -93,5 +93,6 @@
         </a>
       </p>
     </footer>
+    <?php wp_footer(); // required to build this file as a custo footer ?>
   </body>
 </html>

@@ -1,14 +1,3 @@
-<?php
-/*
-Template Name: Accueil
-*/
-?>
-
-<?php
-
-
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
