@@ -1,1 +1,2 @@
-coucou 
+<main class="main">
+</main>
