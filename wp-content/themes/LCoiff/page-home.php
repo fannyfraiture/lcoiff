@@ -1,14 +1,9 @@
 <?php
-/*
+  /*
 Template Name: Accueil
 */
 ?>
 
-<?php
-
-
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,38 +26,40 @@ Template Name: Accueil
 
   <?php
   //Query data
-  $accueil = get_field('accueil');
+  $accueil_titre = get_field('accueil_titre');
+  $accueil_banniere = get_field('accueil_banniere');
+  $accueil_galerie = get_field('accueil_galerie')['galerie'];
   // echo '<pre>';
-  // var_dump($accueil);
+  // var_dump($accueil_titre);
   // echo '</pre>';
 
-  if ($accueil) : ?>
+  if ($accueil_titre) : ?>
 
     <div class="titre">
-      <h1><?php echo $accueil["accueil_titre"]["titre"]; ?></h1>
-      <img src="<?php echo esc_url($accueil["accueil_titre"]["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
+      <h1><?php echo $accueil_titre["titre"]; ?></h1>
+      <img src="<?php echo esc_url($accueil_titre["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
     </div>
 
     <div class="banniere">
-      <h1><?php echo $accueil["accueil_banniere"]["titre"]; ?></h1>
-      <p><?php echo $accueil["accueil_banniere"]["texte"]; ?></p>
-      <img src="<?php echo esc_url($accueil["accueil_banniere"]["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
+      <h1><?php echo $accueil_banniere["titre"]; ?></h1>
+      <p><?php echo $accueil_banniere["texte"]; ?></p>
+      <img src="<?php echo esc_url($accueil_banniere["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
     </div>
 
     <div class="galerie">
-      <img src="<?php echo esc_url($accueil["accueil_galerie"]["galerie"][0]["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
-      <img src="<?php echo esc_url($accueil["accueil_galerie"]["galerie"][1]["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
-      <img src="<?php echo esc_url($accueil["accueil_galerie"]["galerie"][2]["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
+      <img src="<?php echo esc_url($accueil_galerie[0]["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
+      <img src="<?php echo esc_url($accueil_galerie[1]["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
+      <img src="<?php echo esc_url($accueil_galerie[2]["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
     </div>
 <ul>
   
   <?php
-    $galerie = $accueil["accueil_galerie"]["galerie"];
-    echo '<pre>';
-    var_dump($galerie);
-    echo '</pre>';
+   
+    // echo '<pre>';
+    // var_dump($accueil_galerie);
+    // echo '</pre>';
   
-   foreach ($galerie as $photo): ?>
+   foreach ($accueil_galerie as $photo): ?>
    <li>
      <img src="<?php echo esc_url($photo["image"]['url']); ?>" alt="<?php echo esc_attr($photo['image']['alt']); ?>" />
 
