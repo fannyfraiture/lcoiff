@@ -56,7 +56,7 @@ $accueil_galerie = get_field('accueil_galerie')['galerie'];
       <li class="gallery__element">
         <img
           class="gallery__element__image"
-          src="<?php echo esc_url($photo["image"]['url']); ?>"
+          src="<?php echo esc_url($photo['image']['url']); ?>"
           alt="<?php echo esc_attr($photo['image']['alt']); ?>"
         >
       </li>
