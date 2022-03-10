@@ -4,9 +4,9 @@ Template Name: About
 */
 $about_titre = get_field('about_titre');
 $about_accordeon = get_field('about_accordeon');
-echo '<pre>';
-var_dump($about_accordeon);
-echo '</pre>';
+// echo '<pre>';
+// var_dump($about_accordeon);
+// echo '</pre>';
 ?>
 
 <?php get_header(); ?>
