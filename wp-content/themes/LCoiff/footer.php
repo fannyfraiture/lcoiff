@@ -1,98 +1,108 @@
-    <footer class="footer">
-      <section class="footer__section">
-        <h2 class="hidden">
-          réseaux sociaux
-        </h2>
+<?php
+//Query Data
+$contact_info = get_field('contact_info', 'option');
+$contact_logo = get_field('logo', 'option');
+$contact_horaire = get_field('contact_horaire', 'option');
+// echo '<pre>';
+// var_dump($contact_logo);
+// echo '</pre>';
 
-        <div class="footer__section__content">
-          <img
-            class="footer__section__content__logo"
-            src=""
-            alt="logo LCoiff'"
-          >
 
-          <a class="footer__section__content__link" href="#">
-            <i class="footer__section__content__link__icon"></i>
-            suivez-nous
-          </a>
-        </div>
-      </section>
+?>
 
-      <section class="footer__section">
-        <h2 class="hidden">
-          contact
-        </h2>
 
-        <ul class="footer__section__list">
+<footer class="footer">
+  <section class="footer__section">
+    <h2 class="hidden">
+      réseaux sociaux
+    </h2>
+
+    <div class="footer__section__content">
+      <img class="footer__section__content__logo" src="<?php echo esc_url($contact_logo['url']); ?>" alt="logo LCoiff'">
+
+      <a class="footer__section__content__link" href="<?php echo $contact_info["facebook"]; ?>">
+        <i class="footer__section__content__link__icon"></i>
+        suivez-nous
+      </a>
+    </div>
+  </section>
+
+  <section class="footer__section">
+    <h2 class="hidden">
+      contact
+    </h2>
+
+    <ul class="footer__section__list">
+      <li class="footer__section__list__element">
+        <i class="footer__section__list__element__icon"></i>
+        <p class="footer__section__list__element__info">
+          <?php echo $contact_info['adresse']['rue']; ?>
+        </p>
+        <p class="footer__section__list__element__info">
+          <?php echo $contact_info['adresse']["code_postale_et_ville"]; ?>
+        </p>
+      </li>
+
+      <li class="footer__section__list__element">
+        <i class="footer__section__list__element__icon"></i>
+
+        <p class="footer__section__list__element__info">
+          <?php echo $contact_info["telephone"]; ?>
+        </p>
+      </li>
+
+      <li class="footer__section__list__element">
+        <i class="footer__section__list__element__icon"></i>
+
+        <p class="footer__section__list__element__info">
+          <?php echo $contact_info["email"]; ?>
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="footer__section">
+    <h2 class="hidden">
+      horaires
+    </h2>
+
+    <?php if (have_rows('contact_horaire', 'option')) : ?>
+
+      <ul class="footer__section__list">
+
+        <?php while (have_rows('contact_horaire', 'option')) : the_row(); ?>
+
           <li class="footer__section__list__element">
-            <i class="footer__section__list__element__icon"></i>
-
-            <p class="footer__section__list__element__info">
-              Rue de Gueldre 5, 4000 LIEGE
-            </p>
+            <?php the_sub_field('jour_'); ?>
+            <?php the_sub_field('am'); ?>
+            <?php the_sub_field('pm'); ?>
           </li>
 
-          <li class="footer__section__list__element">
-            <i class="footer__section__list__element__icon"></i>
+        <?php endwhile; ?>
 
-            <p class="footer__section__list__element__info">
-              0478 19 65 98
-            </p>
-          </li>
+      </ul>
 
-          <li class="footer__section__list__element">
-            <i class="footer__section__list__element__icon"></i>
+    <?php endif; ?>
 
-            <p class="footer__section__list__element__info">
-              info@lcoiff.be
-            </p>
-          </li>
-        </ul>
-      </section>
+  </section>
 
-      <section class="footer__section">
-        <h2 class="hidden">
-          horaires
-        </h2>
+  <p class="footer__attributions">
+    Made with heart by
+    <a href="#" class="footer__attributions__link">
+      P. Meulemans
+    </a>,
 
-        <ul class="footer__section__list">
-          <li class="footer__section__list__element">
-            Lu 9h-13h 14h-17h
-          </li>
+    <a href="#" class="footer__attributions__link">
+      T. Backers
+    </a>,
 
-          <li class="footer__section__list__element">
-            Ma 9h-13h 14h-18h
-          </li>
+    <a href="#" class="footer__attributions__link">
+      F. Fraiture
+    </a>
+  </p>
+</footer>
+<?php wp_footer(); // required to build this file as a custo footer 
+?>
+</body>
 
-          <li class="footer__section__list__element">
-            Me 9h-13h 14h-18h
-          </li>
-
-          <li class="footer__section__list__element">
-            Je 9h-13h 14h-18h
-          </li>
-
-          <li class="footer__section__list__element">
-            Ve 9h-13h 14h-17h
-          </li>
-        </ul>
-      </section>
-
-      <p class="footer__attributions">
-        Made with heart by
-        <a href="#" class="footer__attributions__link">
-          P. Meulemans
-        </a>,
-        
-        <a href="#" class="footer__attributions__link">
-          T. Backers
-        </a>,
-
-        <a href="#" class="footer__attributions__link">
-          F. Fraiture
-        </a>
-      </p>
-    </footer>
-    <?php wp_footer(); // required to build this file as a custo footer ?>
-  </body>
 </html>
