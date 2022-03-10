@@ -32,7 +32,6 @@ function my_acf_op_init() {
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 
 // JS file
-
 function add_theme_js()
 {
   // Déclarer jQuery
