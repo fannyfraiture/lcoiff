@@ -5,6 +5,9 @@ Template Name: Accueil
 $accueil_titre = get_field('accueil_titre');
 $accueil_banniere = get_field('accueil_banniere');
 $accueil_galerie = get_field('accueil_galerie')['galerie'];
+echo '<pre>';
+var_dump($accueil_titre);
+echo '</pre>';
 ?>
 
 <?php get_header();?>
@@ -16,8 +19,8 @@ $accueil_galerie = get_field('accueil_galerie')['galerie'];
           'template-parts/top',
           'banner',
           array(
-            'image' => $accueil_titre['accueil_titre']['image']['url'],
-            'texte' => $accueil_titre['accueil_titre']['titre'],
+            'image' => $accueil_titre['image']['url'],
+            'texte' => $accueil_titre['titre'],
             'is_button' => true
           )
         );
