@@ -1,5 +1,5 @@
 <?php
-  /*
+/*
 Template Name: Accueillllllllll
 */
 ?>
@@ -39,37 +39,34 @@ Template Name: Accueillllllllll
       <h2><?php echo $accueil_titre["titre"]; ?></h2>
       <img src="<?php echo esc_url($accueil_titre["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
     </div>
+  <?php endif; ?>
 
-    <div class="banniere">
-      <h2><?php echo $accueil_banniere["slogan"]; ?></h2>
-      <p><?php echo $accueil_banniere["titre"]; ?></p>
-      <p><?php echo $accueil_banniere["texte"]; ?></p>
-      <img src="<?php echo esc_url($accueil_banniere["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
-    </div>
+  <div class="banniere">
+    <h2><?php echo $accueil_banniere["slogan"]; ?></h2>
+    <p><?php echo $accueil_banniere["titre"]; ?></p>
+    <p><?php echo $accueil_banniere["texte"]; ?></p>
+    <img src="<?php echo esc_url($accueil_banniere["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
+  </div>
 
-    <div class="galerie">
-      <img src="<?php echo esc_url($accueil_galerie[0]["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
-      <img src="<?php echo esc_url($accueil_galerie[1]["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
-      <img src="<?php echo esc_url($accueil_galerie[2]["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
-    </div>
-<ul>
-  
-  <?php
-   
+  <div class="galerie">
+    <img src="<?php echo esc_url($accueil_galerie[0]["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
+    <img src="<?php echo esc_url($accueil_galerie[1]["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
+    <img src="<?php echo esc_url($accueil_galerie[2]["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
+  </div>
+  <ul>
+
+    <?php
+
     // echo '<pre>';
     // var_dump($accueil_galerie);
     // echo '</pre>';
-  
-   foreach ($accueil_galerie as $photo): ?>
-   <li>
-     <img src="<?php echo esc_url($photo["image"]['url']); ?>" alt="<?php echo esc_attr($photo['image']['alt']); ?>" />
 
-   </li>
-   
-   <?php endforeach; ?>
-</ul>
-
-  <?php endif; ?>
+    foreach ($accueil_galerie as $photo) : ?>
+      <li>
+        <img src="<?php echo esc_url($photo["image"]['url']); ?>" alt="<?php echo esc_attr($photo['image']['alt']); ?>" />
+      </li>
+    <?php endforeach; ?>
+  </ul>
 
 
 </body>
