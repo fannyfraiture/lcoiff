@@ -2,24 +2,24 @@
 /*
 Template Name: About
 */
-$cliente_titre = get_field('cliente_titre');
-$cliente_banniere = get_field('cliente_banniere');
-// echo '<pre>';
-// var_dump($cliente_banniere);
-// echo '</pre>';
+$about_titre = get_field('about_titre');
+$about_accordeon = get_field('about_accordeon');
+echo '<pre>';
+var_dump($about_accordeon);
+echo '</pre>';
 ?>
 
 <?php get_header(); ?>
 
 <main class="main">
-  <?php if ($cliente_titre) : ?>
+  <?php if ($about_titre) : ?>
     <?php
     get_template_part(
       'template-parts/top',
       'banner',
       array(
-        'image' => $cliente_titre['image']['url'],
-        'texte' => $cliente_titre['titre'],
+        'image' => $about_titre['image']['url'],
+        'texte' => $about_titre['titre'],
         'is_button' => false
       )
     );
@@ -27,19 +27,20 @@ $cliente_banniere = get_field('cliente_banniere');
   <?php endif; ?>
 
   <ul class="info-blocks">
-    <?php foreach($array as $element) ?>
+    <?php
+    $infos = $about_accordeon["info"];
+    foreach ($infos as $info) : ?>
       <li class="info-blocks__info-block">
-      
+
         <h2 class="info-blocks__info-block__title">
           <span class="info-blocks__info-block__plus">
             +
           </span>
-
-          {{$element->machin}}
+          <?php echo $info["titre"] ?>
         </h2>
 
         <p class="info-blocks__info-block__paragraph">
-          {{$element->text}}
+          <?php echo $info["texte"] ?>
         </p>
       </li>
     <?php endforeach; ?>
