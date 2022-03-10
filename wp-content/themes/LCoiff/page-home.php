@@ -36,12 +36,13 @@ Template Name: Accueil
   if ($accueil_titre) : ?>
 
     <div class="titre">
-      <h1><?php echo $accueil_titre["titre"]; ?></h1>
+      <h2><?php echo $accueil_titre["titre"]; ?></h2>
       <img src="<?php echo esc_url($accueil_titre["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
     </div>
 
     <div class="banniere">
-      <h1><?php echo $accueil_banniere["titre"]; ?></h1>
+      <h2><?php echo $accueil_banniere["slogan"]; ?></h2>
+      <p><?php echo $accueil_banniere["titre"]; ?></p>
       <p><?php echo $accueil_banniere["texte"]; ?></p>
       <img src="<?php echo esc_url($accueil_banniere["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
     </div>
