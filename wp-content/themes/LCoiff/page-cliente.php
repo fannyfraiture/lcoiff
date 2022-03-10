@@ -1,53 +1,53 @@
 <?php
-  /*
+/*
 Template Name: Cliente
 */
 ?>
 
 <?php
-  //Query data
-  $cliente_titre = get_field('accueil_titre');
-  $cliente_banniere = get_field('accueil_banniere');
-  
-  echo '<pre>';
-  var_dump($accueil_titre);
-  echo '</pre>';
+//Query data
+$cliente_titre = get_field('cliente_titre');
+$cliente_banniere = get_field('cliente_banniere');
 
-  if ($accueil_titre) : ?>
+// echo '<pre>';
+// var_dump($cliente_banniere);
+// echo '</pre>';
 
-    <div class="titre">
-      <h2><?php echo $accueil_titre["titre"]; ?></h2>
-      <img src="<?php echo esc_url($accueil_titre["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
-    </div>
+get_header(); 
+?>
 
-    <div class="banniere">
-      <h2><?php echo $accueil_banniere["slogan"]; ?></h2>
-      <p><?php echo $accueil_banniere["titre"]; ?></p>
-      <p><?php echo $accueil_banniere["texte"]; ?></p>
-      <img src="<?php echo esc_url($accueil_banniere["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
-    </div>
+<main class="main">
 
-    <div class="galerie">
-      <img src="<?php echo esc_url($accueil_galerie[0]["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
-      <img src="<?php echo esc_url($accueil_galerie[1]["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
-      <img src="<?php echo esc_url($accueil_galerie[2]["image"]['url']); ?>" alt="<?php echo esc_attr($hero['image']['alt']); ?>" />
-    </div>
-<ul>
-  
-  <?php
-   
+  <?php if ($cliente_titre) : ?>
+    <?php
+    get_template_part(
+      'template-parts/top',
+      'banner',
+      array(
+        'image' => $cliente_titre['image']['url'],
+        'texte' => $cliente_titre['titre'],
+        'is_button' => false
+      )
+    );
+    ?>
+  <?php endif; ?>
+
+  <ul>
+    <?php
+
     // echo '<pre>';
     // var_dump($accueil_galerie);
     // echo '</pre>';
-  
-   foreach ($accueil_galerie as $photo): ?>
-   <li>
-     <img src="<?php echo esc_url($photo["image"]['url']); ?>" alt="<?php echo esc_attr($photo['image']['alt']); ?>" />
 
-   </li>
-   
-   <?php endforeach; ?>
-</ul>
+    foreach ($cliente_banniere as $bandeau) : ?>
+      <li>
+        <img src="<?php echo esc_url($bandeau["bandeau"]["image"]['url']); ?>" alt="<?php echo esc_attr($bandeau["bandeau"]['image']['alt']); ?>" />
+        <h2> <?php echo $bandeau["bandeau"]["titre"] ?></h2>
+        <p> <?php echo $bandeau["bandeau"]["texte"] ?></p>
+      </li>
+    <?php endforeach; ?>
+  </ul>
 
-  <?php endif; ?>
+  <main>
 
+    <?php get_footer(); ?>
