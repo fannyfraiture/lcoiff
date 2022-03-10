@@ -48,6 +48,6 @@ get_header();
     <?php endforeach; ?>
   </ul>
 
-    <main>
+    </main>
 
     <?php get_footer(); ?>
