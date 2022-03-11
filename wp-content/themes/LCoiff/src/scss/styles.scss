@@ -1,40 +1,21 @@
-@import 'reset.scss';
-
-// @import 'pages/page.scss';
-@import 'pages/page-home.scss';
-@import 'pages/page-soutien.scss';
-@import 'pages/page-about.scss';
-@import 'pages/page-cliente.scss';
-@import 'pages/page-contact.scss';
-
-// Base
-@import "base/base";
-@import "base/reset";
-@import "base/typography";
-@import "base/normalize";
-
-// Layout
-@import "layout/navbar";
-@import "layout/footer";
-@import "layout/sidebar";
-@import "layout/header";
-
 // Abstract
 @import "abstracts/variables";
-@import "abstracts/colors";
-@import "abstracts/mixins";
+
+// Base
+@import "base/reset";
+@import "base/typography";
+@import "base/base";
+
+
+// Layout
+@import "layout/header";
+
+// Pages
+@import 'pages/page-home';
+@import 'pages/page-soutien';
+@import 'pages/page-about';
+@import 'pages/page-cliente';
+@import 'pages/page-contact';
 
 // Components
-@import "components/alert";
 @import "components/button";
-@import "components/badge";
-@import "components/label";
-@import "components/modal";
-@import "components/course-card";
-@import "components/infobox";
-@import "components/success-popup";
-@import "components/profile-card";
-
-
-
-
