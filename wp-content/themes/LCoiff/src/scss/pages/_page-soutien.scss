@@ -1,1 +1,15 @@
-@import "../components/slogan";
+.ways-to-support{
+    padding: 1rem 0 2rem 0;
+    max-width:75%;
+    margin: 0 auto;
+    &__way-to{
+        &__title{
+            font-size: 2rem;
+            padding-bottom: 2rem;
+        }
+        &__paragraph{
+            font-size: 1rem;
+            padding-bottom: 4rem;
+        }
+    }
+}
