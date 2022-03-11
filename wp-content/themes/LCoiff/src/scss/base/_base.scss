@@ -1,0 +1,11 @@
+html {
+  background-color: $text-clr;
+  display: flex;
+
+  body {
+    background: $site-bckg-clr;
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 1920px;
+  }
+}
