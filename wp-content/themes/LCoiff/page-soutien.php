@@ -9,7 +9,7 @@ $soutien_info = get_field('soutien_info');
 <?php get_header(); ?>
 
 <main class="main">
-  <?php if ($soutien_titre) : ?>
+  <?php if ($csoutien_titre) : ?>
     <?php
     get_template_part(
       'template-parts/top',
