@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/page-home.scss"],"names":[],"mappings":"AAAA,KACE,iBAAA,KAGF,GACE,MAAA","file":"styles.css","sourcesContent":["body {\r\n  background-color: grey;\r\n}\r\n\r\nh2 {\r\n  color:red;\r\n}\r\n"]}
