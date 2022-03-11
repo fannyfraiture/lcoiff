@@ -19,7 +19,7 @@ $contact_horaire = get_field('contact_horaire');
 get_header(); 
 ?>
 
-<main class="main">
+<main class="contact">
 
   <?php if ($contact_titre) : ?>
     <?php
@@ -34,17 +34,21 @@ get_header();
     );
     ?>
   <?php endif; ?>
-  <div class="contact__info">
+  <section class="contact__info">
+    <h2 class="hidden">Contact Info</h2>
   <ul class="contact__info__liste">
-    <li class="adresse">
+    <li class="contact__info__liste__adresse">
+      <i class="contact__info__liste__adresse__emoticone"></i>
     <?php echo $contact_info["adresse"]["rue"]; ?>
     <?php echo $contact_info["adresse"]["code_postale_et_ville"]; ?>
     
     </li>
-    <li class="telephone">
+    <li class="contact__info__liste__telephone">
+    <i class="contact__info__liste__telephone__emoticone"></i>
       <?php echo $contact_info["telephone"]; ?>
     </li>
-    <li class="email">
+    <li class="contact__info__liste__email">
+    <i class="contact__info__liste__email__emoticone"></i>
     <?php echo $contact_info["email"]; ?>
     </li>
   </ul>
@@ -53,16 +57,20 @@ get_header();
             <i class="contact_info_rs_icon"></i>
             suivez-nous
           </a>
-  </div>
+  </section>
 
-  <ul class="contact__horaire">
+  <section class="contact__horaire">
+    <h2 class="hidden">Horaire</h2>
+    <figure class="contact__horaire__horloge"></figure>
+  <ul class="contact__horaire__liste">
     <?php
     foreach ($contact_horaire as $horaire) : ?>
-      <li>
-        <p> <?php echo $horaire["jour_"] ?></p>
+      <li class="contact__horaire__liste__element">
+        <?php echo $horaire["jour_"] ?>
       </li>
     <?php endforeach; ?>
   </ul>
+  </section>
 
 </main>
 
