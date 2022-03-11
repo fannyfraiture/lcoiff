@@ -101,7 +101,7 @@ $contact_horaire = get_field('contact_horaire', 'option');
     </a>
   </p>
 </footer>
-<?php wp_footer(); // required to build this file as a custo footer 
+<?php wp_footer(); // required to build this file as a custom footer 
 ?>
 </body>
 
