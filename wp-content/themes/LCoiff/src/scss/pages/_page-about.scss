@@ -1,0 +1,75 @@
+.info-blocks {
+
+  padding: 1rem 0 2rem 0;
+  max-width: 75%;
+  margin: 0 auto;
+  overflow: hidden;
+
+  .show{
+      display: block;
+  }
+
+  &__info-block {
+    overflow: hidden;
+
+    &__title {
+      position: relative;
+      font-size: 2rem;
+      padding:  2rem 0 2rem 0;
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: 5px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: $banner-clr;
+        border-radius: 5px;
+        transition: width 0.8s ease-out, height 0.8s ease-in-out;
+        
+    }
+    &:hover::after{
+        width: 75%;
+    }
+    }
+
+    &__plus {
+      position: absolute;
+      right: 50px;
+
+      &__cross {
+        position: relative;
+        top:0px;
+        transform: rotate(90deg);
+        
+        
+        &__hor {
+            position: absolute;
+            width: 25px;
+            height: 3px;
+            background-color: $text-clr;
+            transition: all .35s;
+        }
+        
+        &__ver {
+            width: 25px;
+            height: 3px;
+            background-color: $text-clr;
+            position: absolute;
+            left: calc(0px / 2);
+            transform: rotate(90deg);
+            transition: all .35s;
+            
+        }   
+      }
+    }
+    &__paragraph {
+      display: none;
+      font-size: 1rem;
+      padding: 2rem 0 1rem 0;
+      color:black;
+      transition: all .35s;
+    }
+  }
+}
