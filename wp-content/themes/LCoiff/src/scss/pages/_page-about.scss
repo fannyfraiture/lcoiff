@@ -36,14 +36,14 @@
 
     &__plus {
       position: absolute;
-      right: 50px;
-
+      right: 25px;
+      top: 48px;
+      transform-origin: 50% 50%;
+      transform: rotate(0deg);
       &__cross {
-        position: relative;
-        top:0px;
-        transform: rotate(90deg);
-        
-        
+        // position: relative;
+        width: 25px;
+        // height: 25px;
         &__hor {
             position: absolute;
             width: 25px;
@@ -51,7 +51,6 @@
             background-color: $text-clr;
             transition: all .35s;
         }
-        
         &__ver {
             width: 25px;
             height: 3px;
