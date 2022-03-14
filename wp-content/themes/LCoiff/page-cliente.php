@@ -26,20 +26,44 @@ $cliente_banniere = get_field('cliente_banniere');
   <?php endif; ?>
 
   <ul class="cliente-blocks">
-    <?php for ($i = 0; $i < count($cliente_banniere); $i++) : ?>
+    <?php for ($i = 0; $i < count($cliente_banniere); $i++): ?>
       <li class="cliente-blocks__clients-block">
-        <img
-          class="cliente-blocks__clients-block__image"
-          src="<?php echo esc_url($cliente_banniere[$i]["bandeau"]["image"]['url']); ?>"
-          alt="<?php echo esc_attr($cliente_banniere[$i]["bandeau"]['image']['alt']); ?>"
-        >
-        <h2 class="cliente-blocks__clients-block__title">
-          <?php echo $cliente_banniere[$i]["bandeau"]["titre"] ?>
-        </h2>
         
-        <p class="cliente-blocks__clients-block__paragraph">
-          <?php echo $cliente_banniere[$i]["bandeau"]["texte"] ?>
-        </p>
+        <?php if ($i % 2 === 0): ?>
+          <div class="cliente-blocks__cliente-block__text">
+            <h2 class="cliente-blocks__clients-block__text__title">
+              <?php echo $cliente_banniere[$i]["bandeau"]["titre"] ?>
+            </h2>
+            
+            <p class="cliente-blocks__clients-block__text__paragraph">
+              <?php echo $cliente_banniere[$i]["bandeau"]["texte"] ?>
+            </p>
+          </div>
+
+          <img
+            class="cliente-blocks__clients-block__image"
+            src="<?php echo esc_url($cliente_banniere[$i]["bandeau"]["image"]['url']); ?>"
+            alt="<?php echo esc_attr($cliente_banniere[$i]["bandeau"]['image']['alt']); ?>"
+          >
+
+        <?php else: ?>
+          <img
+            class="cliente-blocks__clients-block__image"
+            src="<?php echo esc_url($cliente_banniere[$i]["bandeau"]["image"]['url']); ?>"
+            alt="<?php echo esc_attr($cliente_banniere[$i]["bandeau"]['image']['alt']); ?>"
+          >
+
+          <div class="cliente-blocks__cliente-block__text">
+            <h2 class="cliente-blocks__clients-block__text__title">
+              <?php echo $cliente_banniere[$i]["bandeau"]["titre"] ?>
+            </h2>
+            
+            <p class="cliente-blocks__clients-block__text__paragraph">
+              <?php echo $cliente_banniere[$i]["bandeau"]["texte"] ?>
+            </p>
+          </div>
+        <?php endif; ?>
+
       </li>
     <?php endfor; ?>
   </ul>
