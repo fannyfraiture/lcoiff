@@ -1,29 +1,40 @@
-.ways-to-support{
-    padding: 1rem 0 2rem 0;
-    max-width:75%;
-    margin: 0 auto;
-    &__way-to{
+.ways-to-support {
+  padding: 1rem 0 2rem 0;
+  max-width: 75%;
+  margin: 0 auto;
+  &__way-to {
+    position: relative;
+    &__title {
+      font-size: 2rem;
+      padding-bottom: 2rem;
+
+      @media (max-width: 450px) {
+        font-size: 1.5rem;
+      }
+
+      &::after {
+        content: "";
         position: relative;
-        &__title{
-            font-size: 2rem;
-            padding-bottom: 2rem;
-            &::after {
-                content: "";
-                position: relative;
-                display: block;
-                top: 1rem;
-                left: 0;
-                width: 75%;
-                height: 3px;
-                background-color: $banner-clr;
-                border-radius: 5px;
-                
-                
-            }
-        }
-        &__paragraph{
-            font-size: 1rem;
-            padding-bottom: 4rem;
-        }
+        display: block;
+        top: 1.5rem;
+        left: 0;
+        width: 75%;
+        height: 3px;
+        background-color: $banner-clr;
+        border-radius: 5px;
+      }
     }
+    &__paragraph {
+      font-size: 1rem;
+      font-weight: 200;
+      letter-spacing: 0.1rem;
+      line-height: 1.3rem;
+      text-align: justify;
+      padding: 2rem 0 4rem 0;
+
+      @media (max-width: 450px) {
+        font-size: 0.8rem;
+      }
+    }
+  }
 }

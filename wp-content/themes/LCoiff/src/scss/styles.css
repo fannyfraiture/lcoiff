@@ -71,6 +71,125 @@ html body {
   max-width: 1920px;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  padding: 2rem 0 1.5rem 0;
+  background-color: #F0E6DC;
+}
+
+.footer h2 {
+  display: none;
+}
+
+.footer__section {
+  width: 33.33333%;
+}
+
+@media (max-width: 720px) {
+  .footer__section {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+  }
+}
+
+.footer__section__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.footer__section__content__logo {
+  width: 10rem;
+  height: auto;
+  margin: 0 auto;
+}
+
+.footer__section__content__link {
+  border: 0.1rem solid #000000;
+  border-radius: 5rem;
+  text-decoration: none;
+  color: #000000;
+  font-size: 0.7rem;
+  font-weight: 200;
+  padding: 0.6rem;
+  max-width: 25%;
+  margin: 0 auto;
+  min-width: 70.7px;
+}
+
+.footer__section__list {
+  font-size: 0.8rem;
+  font-weight: 200;
+  letter-spacing: 0.05rem;
+  line-height: 1.7rem;
+}
+
+.footer__section__listinfo {
+  font-size: 0.8rem;
+  font-weight: 200;
+  letter-spacing: 0.05rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-left: 0.1rem solid #000000;
+  border-right: 0.1rem solid #000000;
+}
+
+@media (max-width: 720px) {
+  .footer__section__listinfo {
+    border-top: 0.1rem solid #000000;
+    border-bottom: 0.1rem solid #000000;
+    border-left: none;
+    border-right: none;
+    width: 60%;
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+}
+
+.footer__section__listinfo__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.footer__section__listinfo__element__info {
+  width: 8rem;
+  padding-left: 1.5rem;
+}
+
+.footer__attributions {
+  font-size: 0.8rem;
+  font-weight: 200;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+}
+
+.footer__attributions a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 300;
+}
+
 .top-banner {
   position: relative;
   display: -webkit-box;
@@ -128,6 +247,13 @@ html body {
   font-family: "Bentham", serif;
   font-size: 4rem;
   text-align: center;
+  padding: 0 1rem;
+}
+
+@media (max-width: 450px) {
+  .slogan-section__slogan {
+    font-size: 2.8rem;
+  }
 }
 
 .slogan-section__slogan::after {
@@ -148,14 +274,236 @@ html body {
   margin: 0 auto;
 }
 
+.ways-to-support__way-to {
+  position: relative;
+}
+
 .ways-to-support__way-to__title {
   font-size: 2rem;
   padding-bottom: 2rem;
 }
 
+@media (max-width: 450px) {
+  .ways-to-support__way-to__title {
+    font-size: 1.5rem;
+  }
+}
+
+.ways-to-support__way-to__title::after {
+  content: "";
+  position: relative;
+  display: block;
+  top: 1.5rem;
+  left: 0;
+  width: 75%;
+  height: 3px;
+  background-color: #F0E6DC;
+  border-radius: 5px;
+}
+
 .ways-to-support__way-to__paragraph {
   font-size: 1rem;
-  padding-bottom: 4rem;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+  line-height: 1.3rem;
+  text-align: justify;
+  padding: 2rem 0 4rem 0;
+}
+
+@media (max-width: 450px) {
+  .ways-to-support__way-to__paragraph {
+    font-size: 0.8rem;
+  }
+}
+
+.info-blocks {
+  padding: 1rem 0 2rem 0;
+  max-width: 75%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.info-blocks .show {
+  display: block;
+}
+
+.info-blocks__info-block {
+  overflow: hidden;
+}
+
+.info-blocks__info-block__title {
+  position: relative;
+  font-size: 2rem;
+  padding: 2rem 0 2rem 0;
+}
+
+.info-blocks__info-block__title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #F0E6DC;
+  border-radius: 5px;
+  -webkit-transition: width 0.8s ease-out, height 0.8s ease-in-out;
+  transition: width 0.8s ease-out, height 0.8s ease-in-out;
+}
+
+.info-blocks__info-block__title:hover::after {
+  width: 75%;
+}
+
+.info-blocks__info-block__plus {
+  position: absolute;
+  right: 50px;
+}
+
+.info-blocks__info-block__plus__cross {
+  position: relative;
+  top: 0px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.info-blocks__info-block__plus__cross__hor {
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: #000000;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.info-blocks__info-block__plus__cross__ver {
+  width: 25px;
+  height: 3px;
+  background-color: #000000;
+  position: absolute;
+  left: calc(0px / 2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.info-blocks__info-block__paragraph {
+  display: none;
+  font-size: 1rem;
+  padding: 2rem 0 1rem 0;
+  color: black;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.cliente-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.cliente-blocks__clients-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cliente-blocks__clients-block__text {
+  width: 50%;
+  height: 30rem;
+  min-width: 300px;
+}
+
+@media (max-width: 860px) {
+  .cliente-blocks__clients-block__text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 860px) {
+  .cliente-blocks__clients-block__text {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+}
+
+.cliente-blocks__clients-block__text__title {
+  font-size: 2.5rem;
+  padding: 7rem 3.5rem 0 3.5rem;
+  position: relative;
+  text-align: left;
+}
+
+.cliente-blocks__clients-block__text__title::after {
+  content: "";
+  position: relative;
+  display: block;
+  top: 1rem;
+  left: 0;
+  width: 75%;
+  height: 3px;
+  background-color: #F0E6DC;
+  border-radius: 5px;
+}
+
+@media (max-width: 860px) {
+  .cliente-blocks__clients-block__text__title {
+    font-size: 1.8rem;
+    padding-top: 4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .cliente-blocks__clients-block__text__title {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+.cliente-blocks__clients-block__text__paragraph {
+  padding: 4rem 5rem 1rem 3.5rem;
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+  line-height: 1.3rem;
+  text-align: left;
+}
+
+@media (max-width: 400px) {
+  .cliente-blocks__clients-block__text__paragraph {
+    padding: 1.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+.cliente-blocks__clients-block__figure {
+  width: 50%;
+  height: 30rem;
+}
+
+@media (max-width: 860px) {
+  .cliente-blocks__clients-block__figure {
+    width: 100%;
+    height: 25rem;
+  }
+}
+
+.cliente-blocks__clients-block__figure__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .contact__info {
@@ -168,6 +516,12 @@ html body {
           flex-direction: column;
   text-align: center;
   padding: 5rem 0 5rem 0;
+}
+
+@media (max-width: 700px) {
+  .contact__info {
+    padding: 3rem 0 5rem 0;
+  }
 }
 
 .contact__info h2 {
@@ -183,21 +537,20 @@ html body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
-  width: 80%;
+  text-align: center;
   position: relative;
   padding-bottom: 3rem;
+  margin: 0 3rem;
 }
 
-@media (max-width: 790px) {
+@media (max-width: 700px) {
   .contact__info__liste {
-    width: 80%;
-  }
-}
-
-@media (max-width: ) {
-  .contact__info__liste {
-    font-size: 11.5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 1.3rem;
+    margin: 0;
   }
 }
 
@@ -222,10 +575,17 @@ html body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 30%;
   font-size: 1.2rem;
   font-weight: 200;
   padding: 3rem 0;
+  width: 33.33333%;
+}
+
+@media (max-width: 700px) {
+  .contact__info__liste li {
+    padding: 2.5rem 0;
+    width: 50%;
+  }
 }
 
 .contact__info__liste li i {
@@ -233,9 +593,26 @@ html body {
   font-size: 2rem;
 }
 
+@media (max-width: 700px) {
+  .contact__info__liste li i {
+    padding-bottom: 2rem;
+  }
+}
+
 .contact__info__liste__telephone {
-  border-left: 0.1rem solid #000000;
-  border-right: 0.1rem solid #000000;
+  border-left: 0.15rem solid #F0E6DC;
+  border-right: 0.15rem solid #F0E6DC;
+  width: 33.33333%;
+}
+
+@media (max-width: 700px) {
+  .contact__info__liste__telephone {
+    border-top: 0.15rem solid #F0E6DC;
+    border-bottom: 0.15rem solid #F0E6DC;
+    border-left: none;
+    border-right: none;
+    width: 50%;
+  }
 }
 
 .contact__info__rs {
@@ -248,6 +625,19 @@ html body {
   padding: 0.6rem;
   max-width: 20%;
   margin: 0 auto;
+}
+
+@media (max-width: 516px) {
+  .contact__info__rs {
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact__info__rs {
+    font-size: 0.8rem;
+    max-width: 40%;
+  }
 }
 
 .contact__horaire {
@@ -265,13 +655,26 @@ html body {
 }
 
 .contact__horaire__horloge {
-  background-color: #F0E6DC;
   position: absolute;
+  width: 100%;
   top: -3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact__horaire__horloge__icone {
+  background-color: #F0E6DC;
   font-size: 4rem;
   border-radius: 50%;
   padding: 1rem;
-  left: 47%;
+  margin: 0 auto;
+}
+
+@media (max-width: 400px) {
+  .contact__horaire__horloge__icone {
+    font-size: 3rem;
+  }
 }
 
 .contact__horaire h2 {
@@ -283,6 +686,12 @@ html body {
   font-weight: 200;
   line-height: 1.5rem;
   letter-spacing: 0.1rem;
+}
+
+@media (max-width: 400px) {
+  .contact__horaire__liste {
+    font-size: 0.8rem;
+  }
 }
 
 .contact__horaire__liste__element {

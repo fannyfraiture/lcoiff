@@ -30,7 +30,7 @@ $cliente_banniere = get_field('cliente_banniere');
       <li class="cliente-blocks__clients-block">
         
         <?php if ($i % 2 === 0): ?>
-          <div class="cliente-blocks__cliente-block__text">
+          <div class="cliente-blocks__clients-block__text">
             <h2 class="cliente-blocks__clients-block__text__title">
               <?php echo $cliente_banniere[$i]["bandeau"]["titre"] ?>
             </h2>
@@ -39,21 +39,23 @@ $cliente_banniere = get_field('cliente_banniere');
               <?php echo $cliente_banniere[$i]["bandeau"]["texte"] ?>
             </p>
           </div>
-
+          <figure class="cliente-blocks__clients-block__figure">
           <img
-            class="cliente-blocks__clients-block__image"
+            class="cliente-blocks__clients-block__figure__image"
             src="<?php echo esc_url($cliente_banniere[$i]["bandeau"]["image"]['url']); ?>"
             alt="<?php echo esc_attr($cliente_banniere[$i]["bandeau"]['image']['alt']); ?>"
           >
-
+        </figure>
         <?php else: ?>
+          <figure class="cliente-blocks__clients-block__figure">
           <img
-            class="cliente-blocks__clients-block__image"
+            class="cliente-blocks__clients-block__figure__image"
             src="<?php echo esc_url($cliente_banniere[$i]["bandeau"]["image"]['url']); ?>"
             alt="<?php echo esc_attr($cliente_banniere[$i]["bandeau"]['image']['alt']); ?>"
           >
+        </figure>
 
-          <div class="cliente-blocks__cliente-block__text">
+          <div class="cliente-blocks__clients-block__text">
             <h2 class="cliente-blocks__clients-block__text__title">
               <?php echo $cliente_banniere[$i]["bandeau"]["titre"] ?>
             </h2>

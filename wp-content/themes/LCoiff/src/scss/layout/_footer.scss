@@ -1,0 +1,97 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 2rem 0 1.5rem 0;
+  background-color: $banner-clr;
+
+  h2 {
+    display: none;
+  }
+
+  &__section {
+    width: 33.33333%;
+
+    @media (max-width: 720px) {
+      width: 100%;
+      height: auto;
+      padding: 1rem 0;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      &__logo {
+        width: 10rem;
+        height: auto;
+        margin: 0 auto;
+      }
+
+      &__link {
+        border: 0.1rem solid $text-clr;
+        border-radius: 5rem;
+        text-decoration: none;
+        color: $text-clr;
+        font-size: 0.7rem;
+        font-weight: 200;
+        padding: 0.6rem;
+        max-width: 25%;
+        margin: 0 auto;
+        min-width: 70.7px;
+      }
+    }
+
+    &__list {
+      font-size: 0.8rem;
+      font-weight: 200;
+      letter-spacing: 0.05rem;
+      line-height: 1.7rem;
+    }
+
+    &__listinfo {
+      font-size: 0.8rem;
+      font-weight: 200;
+      letter-spacing: 0.05rem;
+      display: flex;
+      flex-direction: column;
+      border-left: 0.1rem solid $text-clr;
+      border-right: 0.1rem solid $text-clr;
+
+      @media (max-width: 720px) {
+        border-top: 0.1rem solid $text-clr;
+        border-bottom: 0.1rem solid $text-clr;
+        border-left: none;
+        border-right: none;
+        width: 60%;
+        margin: 0 auto;
+        padding: 1rem 0;
+      }
+      &__element {
+        display: flex;
+        margin: 0 auto;
+        padding: 1rem 0;
+        &__info {
+          width: 8rem;
+          padding-left: 1.5rem;
+        }
+      }
+    }
+  }
+
+  &__attributions {
+    font-size: 0.8rem;
+    font-weight: 200;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+
+    a {
+      text-decoration: none;
+      color: $text-clr;
+      font-weight: 300;
+    }
+  }
+}
