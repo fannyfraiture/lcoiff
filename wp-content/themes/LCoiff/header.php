@@ -28,7 +28,7 @@
       <nav class="navbar">
         <ul class="navbar__list">
           <li class="navbar__list__element">
-            <a class="navbar__list__element__link" href="/devenir-cliente">
+            <a class="navbar__list__element__link" href="/LCoiff/devenir-cliente">
               <p class="navbar__list__element__link__text">
                 devenir cliente
               </p>
@@ -36,7 +36,7 @@
           </li>
 
           <li class="navbar__list__element">
-            <a class="navbar__list__element__link" href="/qui-sommes-nous">
+            <a class="navbar__list__element__link" href="/LCoiff/qui-sommes-nous">
               <p class="navbar__list__element__link__text">
                 qui sommes-nous
               </p>
@@ -44,7 +44,7 @@
           </li>
 
           <li class="navbar__list__element">
-            <a class="navbar__list__element__link--center" href="/">
+            <a class="navbar__list__element__link--center" href="/LCoiff">
               <img
                 class="navbar__list__element__link--center__logo"
                 src= "<?php echo get_template_directory_uri()?>/src/img/logo_lcoiff_beige.png" 
@@ -54,7 +54,7 @@
           </li>
 
           <li class="navbar__list__element">
-            <a class="navbar__list__element__link" href="/nous-soutenir">
+            <a class="navbar__list__element__link" href="/LCoiff/nous-soutenir">
               <p class="navbar__list__element__link__text">
                 nous soutenir
               </p>
@@ -62,7 +62,7 @@
           </li>
 
           <li class="navbar__list__element">
-            <a class="navbar__list__element__link" href="/contact">
+            <a class="navbar__list__element__link" href="/LCoiff/contact">
               <p class="navbar__list__element__link__text">
                 contact
               </p>
@@ -81,25 +81,25 @@
     <nav class="responsive-menu">
       <ul class="responsive-menu__list">
         <li class="responsive-menu__list__element">
-          <a href="/devenir-cliente" class="responsive-menu__list__element__link">
+          <a href="/LCoiff/devenir-cliente" class="responsive-menu__list__element__link">
             devenir cliente
           </a>
         </li>
 
         <li class="responsive-menu__list__element">
-          <a href="/qui-sommes-nous" class="responsive-menu__list__element__link">
+          <a href="/LCoiff/qui-sommes-nous" class="responsive-menu__list__element__link">
             qui sommes-nous
           </a>
         </li>
 
         <li class="responsive-menu__list__element">
-          <a href="/nous-soutenir" class="responsive-menu__list__element__link">
+          <a href="/LCoiff/nous-soutenir" class="responsive-menu__list__element__link">
             nous soutenir
           </a>
         </li>
 
         <li class="responsive-menu__list__element">
-          <a href="/contact" class="responsive-menu__list__element__link">
+          <a href="/LCoiff/contact" class="responsive-menu__list__element__link">
             contact
           </a>
         </li>
