@@ -13,28 +13,32 @@
   </head>
 
   <body>
-    <header class="header">
+  <header class="header">
       <h1 class="hidden">LCoiff'</h1>
 
       <nav class="navbar">
         <ul class="navbar__list">
           <li class="navbar__list__element">
             <a class="navbar__list__element__link" href="#">
-              devenir cliente
+              <p class="navbar__list__element__link__text">
+                devenir cliente
+              </p>
             </a>
           </li>
 
           <li class="navbar__list__element">
             <a class="navbar__list__element__link" href="#">
-              qui sommes-nous
+              <p class="navbar__list__element__link__text">
+                qui sommes-nous
+              </p>
             </a>
           </li>
 
           <li class="navbar__list__element">
-            <a class="navbar__list__element__link" href="#">
+            <a class="navbar__list__element__link--center" href="#">
               <img
-                class="navbar__list__element__link__logo"
-                src=""
+                class="navbar__list__element__link--center__logo"
+                src="./src/img/logo_lcoiff_beige.png"
                 alt="logo LCoiff'"
               >
             </a>
@@ -42,15 +46,62 @@
 
           <li class="navbar__list__element">
             <a class="navbar__list__element__link" href="#">
-              nous soutenir
+              <p class="navbar__list__element__link__text">
+                nous soutenir
+              </p>
             </a>
           </li>
 
           <li class="navbar__list__element">
             <a class="navbar__list__element__link" href="#">
-              contact
+              <p class="navbar__list__element__link__text">
+                contact
+              </p>
             </a>
+          </li>
+
+          <li class="navbar__list__element">
+            <button type="button" class="navbar__list__element__button">
+              <i class="fa-solid fa-bars"></i>
+            </button>
           </li>
         </ul>
       </nav>
     </header>
+
+    <nav class="responsive-menu">
+      <ul class="responsive-menu__list">
+        <li class="responsive-menu__list__element">
+          <a href="#" class="responsive-menu__list__element__link">
+            devenir cliente
+          </a>
+        </li>
+
+        <li class="responsive-menu__list__element">
+          <a href="#" class="responsive-menu__list__element__link">
+            qui sommes-nous
+          </a>
+        </li>
+
+        <li class="responsive-menu__list__element">
+          <a href="#" class="responsive-menu__list__element__link">
+            nous soutenir
+          </a>
+        </li>
+
+        <li class="responsive-menu__list__element">
+          <a href="#" class="responsive-menu__list__element__link">
+            contact
+          </a>
+        </li>
+
+        <li class="responsive-menu__list__element">
+          <button
+            type="button"
+            class="responsive-menu__list__element__up-button"
+          >
+            <i class="fa-solid fa-chevron-up"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
