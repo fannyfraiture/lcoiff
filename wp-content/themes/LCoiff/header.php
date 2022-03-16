@@ -38,7 +38,7 @@
             <a class="navbar__list__element__link--center" href="#">
               <img
                 class="navbar__list__element__link--center__logo"
-                src="./src/img/logo_lcoiff_beige.png"
+                src= "<?php echo get_template_directory_uri()?>/src/img/logo_lcoiff_beige.png" 
                 alt="logo LCoiff'"
               >
             </a>

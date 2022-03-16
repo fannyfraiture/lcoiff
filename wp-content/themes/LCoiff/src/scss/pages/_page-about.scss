@@ -1,20 +1,22 @@
 .info-blocks {
-
+  
   padding: 1rem 0 2rem 0;
   max-width: 75%;
   margin: 0 auto;
   overflow: hidden;
-
+  
   .show{
-      display: block;
-  }
+    display: block;
+    }
 
-  &__info-block {
-    overflow: hidden;
-
-    &__title {
-      position: relative;
-      font-size: 2rem;
+    &__info-block {
+      overflow: hidden;
+      // position: relative;
+      
+      &__title {
+        z-index: +1;
+        position: relative;
+        font-size: 2rem;
       padding:  2rem 0 2rem 0;
       &__underline{
         position: absolute;
@@ -23,30 +25,31 @@
         height:3px;
         background-color: $banner-clr;
         border-radius: 3px;
-        transition: width 0.8s ease-out, height 0.8s ease-in-out;
-        
-        
-        
+        transition: width 0.8s ease-out;
       }
-    
+      
     }
-
+    
+    .rotate{
+      transform: rotate(45deg);
+    }
     &__plus {
       position: absolute;
       right: 25px;
       top: 48px;
       transform-origin: 50% 50%;
       transform: rotate(0deg);
+      transition: all .35s;
       &__cross {
         // position: relative;
         width: 15px;
         // height: 25px;
         &__hor {
-            position: absolute;
-            width: 15px;
-            height: 2px;
-            background-color: $text-clr;
-            transition: all .35s;
+          position: absolute;
+          width: 15px;
+          height: 2px;
+          background-color: $text-clr;
+            
         }
         &__ver {
             width: 15px;
@@ -55,20 +58,27 @@
             position: absolute;
             left: calc(0px / 2);
             transform: rotate(90deg);
-            transition: all .35s;
+           
             
         }   
       }
     }
     &__paragraph {
+      transform: translateY(-500px);
+      display: block;
+      height:0;
       line-height: 1.5rem;
-      font-weight: 200;
+      font-weight: 300;
       line-break: strict;
-      display: none;
+      // display: none;
+      // overflow: hidden;
       font-size: 1rem;
       padding: 2rem 0 1rem 0;
       color:black;
       transition: all .35s;
+      span{
+        font-weight: bold;
+      }
     }
   }
 }
