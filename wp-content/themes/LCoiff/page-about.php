@@ -40,7 +40,8 @@ $about_accordeon = get_field('about_accordeon');
             </div>
           </span>
         </h2>
-
+        <div class="info-blocks__info-block__title__underline"></div>
+        
         <p class="info-blocks__info-block__paragraph">
           <?php echo $info["texte"] ?>
         </p>
