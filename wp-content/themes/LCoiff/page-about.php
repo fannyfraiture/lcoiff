@@ -32,13 +32,13 @@ $about_accordeon = get_field('about_accordeon');
     foreach ($infos as $info) : ?>
         <h2 class="info-blocks__info-block__title">
           <?php echo $info["titre"] ?>
-          <span class="info-blocks__info-block__plus">
+          <div class="info-blocks__info-block__plus">
             <div class="info-blocks__info-block__plus__cross">
               <div class="info-blocks__info-block__plus__cross__hor">
                 <div class="info-blocks__info-block__plus__cross__ver"></div>
               </div>
             </div>
-          </span>
+          </div>
           <div class="info-blocks__info-block__title__underline"></div>
         </h2>
         
