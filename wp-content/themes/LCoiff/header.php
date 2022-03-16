@@ -6,20 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Bentham&family=Raleway:wght@100;200;300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bentham&family=Raleway:wght@100;200;300;500;700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
     <title>L'Coiff</title>
     <?php wp_head(); // required to build the file as a custom header ?>
   </head>
 
   <body>
-  <header class="header">
+    <header class="header">
       <h1 class="hidden">LCoiff'</h1>
 
       <nav class="navbar">
         <ul class="navbar__list">
           <li class="navbar__list__element">
-            <a class="navbar__list__element__link" href="#">
+            <a class="navbar__list__element__link" href="/devenir-cliente">
               <p class="navbar__list__element__link__text">
                 devenir cliente
               </p>
@@ -27,7 +36,7 @@
           </li>
 
           <li class="navbar__list__element">
-            <a class="navbar__list__element__link" href="#">
+            <a class="navbar__list__element__link" href="/qui-sommes-nous">
               <p class="navbar__list__element__link__text">
                 qui sommes-nous
               </p>
@@ -35,7 +44,7 @@
           </li>
 
           <li class="navbar__list__element">
-            <a class="navbar__list__element__link--center" href="#">
+            <a class="navbar__list__element__link--center" href="/">
               <img
                 class="navbar__list__element__link--center__logo"
                 src= "<?php echo get_template_directory_uri()?>/src/img/logo_lcoiff_beige.png" 
@@ -45,7 +54,7 @@
           </li>
 
           <li class="navbar__list__element">
-            <a class="navbar__list__element__link" href="#">
+            <a class="navbar__list__element__link" href="/nous-soutenir">
               <p class="navbar__list__element__link__text">
                 nous soutenir
               </p>
@@ -53,7 +62,7 @@
           </li>
 
           <li class="navbar__list__element">
-            <a class="navbar__list__element__link" href="#">
+            <a class="navbar__list__element__link" href="/contact">
               <p class="navbar__list__element__link__text">
                 contact
               </p>
@@ -72,25 +81,25 @@
     <nav class="responsive-menu">
       <ul class="responsive-menu__list">
         <li class="responsive-menu__list__element">
-          <a href="#" class="responsive-menu__list__element__link">
+          <a href="/devenir-cliente" class="responsive-menu__list__element__link">
             devenir cliente
           </a>
         </li>
 
         <li class="responsive-menu__list__element">
-          <a href="#" class="responsive-menu__list__element__link">
+          <a href="/qui-sommes-nous" class="responsive-menu__list__element__link">
             qui sommes-nous
           </a>
         </li>
 
         <li class="responsive-menu__list__element">
-          <a href="#" class="responsive-menu__list__element__link">
+          <a href="/nous-soutenir" class="responsive-menu__list__element__link">
             nous soutenir
           </a>
         </li>
 
         <li class="responsive-menu__list__element">
-          <a href="#" class="responsive-menu__list__element__link">
+          <a href="/contact" class="responsive-menu__list__element__link">
             contact
           </a>
         </li>
