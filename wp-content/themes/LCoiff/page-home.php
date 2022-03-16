@@ -34,11 +34,13 @@ $accueil_galerie = get_field('accueil_galerie')['galerie'];
   </section>
   
   <section class="presentation">
+    <div class="presentation__image">
     <img
-      class="presentation__image"
+      class="presentation__image__src"
       src="<?php echo esc_url($accueil_banniere['image']['url']); ?>"
       alt="<?php echo esc_attr($hero['image']['alt']); ?>"
     >
+    </div>
 
     <div class="presentation__text-content">
       <h2 class="presentation__text-content__heading">
@@ -51,11 +53,11 @@ $accueil_galerie = get_field('accueil_galerie')['galerie'];
     </div>
   </section>
 
-  <ul class="gallery">
+  <ul class="presentation__gallery">
     <?php foreach ($accueil_galerie as $image):?>
-      <li class="gallery__element">
+      <li class="presentation__gallery__element">
         <img
-          class="gallery__element__image"
+          class="presentation__gallery__element__image"
           src="<?php echo esc_url($image['image']['url']); ?>"
           alt="<?php echo esc_attr($image['image']['alt']); ?>"
         >

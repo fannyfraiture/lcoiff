@@ -4,6 +4,11 @@
   flex-direction: column;
   color: $site-bckg-clr;
   padding: 15rem 0;
+  height: 35vh;
+
+  @media (max-width: 640px) {
+    height: 25vh;
+  }
 
   &__image {
     position: absolute;
@@ -13,25 +18,54 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: brightness(45%);
   }
 
   &__heading {
     font-family: $heading-font;
-    letter-spacing: .3rem;
+    letter-spacing: 0.3rem;
     font-size: 5rem;
     position: relative;
-    margin: 0 auto;
-    max-width: 50%;
+    margin: auto;
+    max-width: 70%;
     text-align: center;
+    @media (max-width: 943px) {
+      font-size: 4rem;
+    }
+    @media (max-width: 640px) {
+      font-size: 3rem;
+      max-width: 80%;
+    }
+    @media (max-width: 445px) {
+      font-size: 2.5rem;
+      max-width: 80%;
+    }
   }
 
   &__link {
     background-color: $decoration-clr;
     text-transform: uppercase;
-    letter-spacing: .1rem;
-    padding: .7rem 1.4rem;
+    letter-spacing: 0.1rem;
+    padding: 0.7rem 1.4rem;
     border-radius: 10px;
     position: relative;
     margin: 3.5rem auto 0 auto;
+    text-decoration: none;
+    color: $site-bckg-clr;
+    font-weight: 200;
+
+    &:hover {
+      background-color: transparent;
+      color: $text-clr;
+      border-radius: 10px;
+      border: 1px solid $banner-clr;
+      background-color: $banner-clr;
+      box-shadow: 7px 7px 6px darken ($text-clr, 82%);
+    }
+
+    @media (max-width: 640px) {
+      padding: 0.5rem 1.3rem;
+      font-size: 0.8rem;
+    }
   }
 }

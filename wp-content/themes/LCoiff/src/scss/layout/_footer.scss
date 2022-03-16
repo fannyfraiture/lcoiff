@@ -24,9 +24,14 @@
       text-align: center;
 
       &__logo {
-        width: 10rem;
+        width: 8rem;
         height: auto;
         margin: 0 auto;
+        padding-bottom: 1rem;
+
+        @media (max-width: 720px) {
+          width: 6rem;
+        }
       }
 
       &__link {
@@ -34,12 +39,26 @@
         border-radius: 5rem;
         text-decoration: none;
         color: $text-clr;
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         font-weight: 200;
-        padding: 0.6rem;
+        padding: 0.4rem;
         max-width: 25%;
         margin: 0 auto;
         min-width: 70.7px;
+
+        @media (max-width: 720px) {
+          font-size: 0.5rem;
+          padding: 0.4rem;
+        }
+
+        &:hover {
+          background-color: transparent;
+          color: $banner-clr;
+          border-radius: 5rem;
+          border: 1px solid $text-clr;
+          background-color: $text-clr;
+          box-shadow: 7px 7px 6px darken ($text-clr, 82%);
+        }
       }
     }
 
@@ -48,6 +67,11 @@
       font-weight: 200;
       letter-spacing: 0.05rem;
       line-height: 1.7rem;
+
+      @media (max-width: 720px) {
+        font-size: 0.6rem;
+        line-height: 1.3rem;
+      }
     }
 
     &__listinfo {
@@ -64,14 +88,21 @@
         border-bottom: 0.1rem solid $text-clr;
         border-left: none;
         border-right: none;
-        width: 60%;
+        width: 50%;
         margin: 0 auto;
         padding: 1rem 0;
+        font-size: 0.6rem;
       }
       &__element {
         display: flex;
         margin: 0 auto;
         padding: 1rem 0;
+
+        @media (max-width: 720px) {
+          padding: 0.5rem 0;
+          text-align: left;
+          width: 8rem;
+        }
         &__info {
           width: 8rem;
           padding-left: 1.5rem;
@@ -81,12 +112,16 @@
   }
 
   &__attributions {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-weight: 200;
     letter-spacing: 0.05rem;
     text-align: center;
     margin: 0 auto;
     padding-top: 1.5rem;
+
+    @media (max-width: 720px) {
+      font-size: 0.5rem;
+    }
 
     a {
       text-decoration: none;
