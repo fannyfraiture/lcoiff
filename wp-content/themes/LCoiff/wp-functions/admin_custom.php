@@ -21,7 +21,7 @@ function disable_gutenberg_editor()
 
 
 }
-add_action('admin_menu','my_wpadmin_sidebar_menu', 999);
+// add_action('admin_menu','my_wpadmin_sidebar_menu', 999);
 
 
 

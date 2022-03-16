@@ -64,14 +64,14 @@
       }
     }
     &__paragraph {
-      transform: translateY(-500px);
-      display: block;
-      height:0;
+      transform: translateX(-500px);
+      // display: block;
+      
       line-height: 1.5rem;
       font-weight: 300;
       line-break: strict;
       // display: none;
-      // overflow: hidden;
+      overflow: hidden;
       font-size: 1rem;
       padding: 2rem 0 1rem 0;
       color:black;

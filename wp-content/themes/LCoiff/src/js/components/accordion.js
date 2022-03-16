@@ -20,8 +20,8 @@ for (let i = 0; i < titres.length; i++) {
   titres[i].addEventListener("click", () => {
     // paragraph[i].style.display =
     //   paragraph[i].style.display === "block" ? "none" : "block";
-    paragraph[i].style.height =
-      paragraph[i].style.height === "100%" ? "0%" : "100%";
+    // paragraph[i].style.height =
+    //   paragraph[i].style.height === "100%" ? "0%" : "100%";
 
     paragraph[i].style.transform =
       paragraph[i].style.transform === "translateY(0px)"
@@ -35,12 +35,5 @@ for (let i = 0; i < titres.length; i++) {
     underlines[i].style.width =
       underlines[i].style.width === "50%" ? "100%" : "50%";
   });
-  //   titres[i].addEventListener("mouseenter", () => {
-
-  //     underlines[i].style.width = "75%";
-
-  //     setTimeout (() => {
-  //       underlines[i].style.width = "100%"
-  //     }, 2000);
-  // },false);
+  
 }
