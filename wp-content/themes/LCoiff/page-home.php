@@ -52,12 +52,12 @@ $accueil_galerie = get_field('accueil_galerie')['galerie'];
   </section>
 
   <ul class="gallery">
-    <?php foreach ($accueil_galerie as $image): ?>
+    <?php foreach ($accueil_galerie as $image):?>
       <li class="gallery__element">
         <img
           class="gallery__element__image"
-          src="<?php echo esc_url($photo['image']['url']); ?>"
-          alt="<?php echo esc_attr($photo['image']['alt']); ?>"
+          src="<?php echo esc_url($image['image']['url']); ?>"
+          alt="<?php echo esc_attr($image['image']['alt']); ?>"
         >
       </li>
     <?php endforeach; ?>

@@ -12,7 +12,6 @@ for (let i = 0; i < titres.length; i++) {
   console.log(paragraph[i].style.display);
   console.log(crosses[i].style.transform);
 
-  // click events  
   titres[i].addEventListener("click", () => {
     paragraph[i].style.display =
       paragraph[i].style.display === "block" ? "none" : "block";
@@ -24,15 +23,6 @@ for (let i = 0; i < titres.length; i++) {
       underlines[i].style.width === "50%"
         ? "100%"
         : "50%";
-
-
-  // mouseover events
-  titres[i].addEventListener("mouseover", () => {
-    
-    underlines[i].style.width =    
-      underlines[i].style.width === "75%"
-        ? "100%"
-        : "75%";
 });
 }
 
