@@ -1,5 +1,5 @@
 .info-blocks {
-  padding: 4rem 0 2rem 0;
+  padding: 5rem 0 2rem 0;
   max-width: 75%;
   margin: 0 auto;
   overflow: hidden;
@@ -17,8 +17,8 @@
       position: relative;
       z-index: +1;
       font-size: 2rem;
-      @media screen and (max-width: 400px) {
-        padding-right: 2.4rem;
+      @media screen and (max-width: 500px) {
+        padding-right: 2.5rem;
       }
       padding: 1.5rem 0 2rem 0;
       overflow: hidden;
@@ -38,7 +38,7 @@
     &__plus {
       position: absolute;
       right: 20px;
-      top: 48px;
+      top: 40px;
       transform-origin: 50% 50%;
       transform: rotate(0deg);
       transition: all 0.35s;
