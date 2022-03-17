@@ -15,6 +15,8 @@
       referrerpolicy="no-referrer"
     >
     <title>L'Coiff</title>
+    <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri()?>/src/img/favicon.ico">
+    
     <?php wp_head(); // required to build the file as a custom header ?>
   </head>
 
