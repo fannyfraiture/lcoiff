@@ -16,7 +16,7 @@ $is_button = $args['is_button'];
   </h2>
 
   <?php if ($is_button): ?>
-    <a class="top-banner__link" href="#">
+    <a class="top-banner__link" href="/LCoiff/contact">
       contact
     </a>
   <?php endif; ?>

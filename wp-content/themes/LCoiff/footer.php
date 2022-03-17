@@ -83,15 +83,15 @@ $contact_horaire = get_field('contact_horaire', 'option');
 
       <p class="footer__attributions">
         Made with heart by
-        <a href="#" class="footer__attributions__link">
+        <a href="https://www.linkedin.com/in/meulemans-philippe/" target="_blank" class="footer__attributions__link">
           P. Meulemans
         </a>,
 
-        <a href="#" class="footer__attributions__link">
+        <a href="https://www.linkedin.com/in/thomas-backers-54197621b/" target="_blank" class="footer__attributions__link">
           T. Backers
         </a>,
 
-        <a href="#" class="footer__attributions__link">
+        <a href="https://www.linkedin.com/in/fanny-fraiture/" target="_blank" class="footer__attributions__link">
           F. Fraiture
         </a>
       </p>
