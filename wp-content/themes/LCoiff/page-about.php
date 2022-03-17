@@ -30,6 +30,7 @@ $about_accordeon = get_field('about_accordeon');
     <?php
     $infos = $about_accordeon["info"];
     foreach ($infos as $info) : ?>
+      <li class="info-blocks__info-block__tabs">
         <h2 class="info-blocks__info-block__title">
           <?php echo $info["titre"] ?>
           <div class="info-blocks__info-block__plus">
@@ -41,7 +42,7 @@ $about_accordeon = get_field('about_accordeon');
           </div>
           <div class="info-blocks__info-block__title__underline"></div>
         </h2>
-        
+
         <p class="info-blocks__info-block__paragraph">
           <?php echo $info["texte"] ?>
         </p>
