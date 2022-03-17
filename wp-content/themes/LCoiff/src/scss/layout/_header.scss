@@ -18,7 +18,7 @@
 
       &__link {
         color: $text-clr;
-        letter-spacing: .1rem;
+        letter-spacing: 0.1rem;
         text-decoration: none;
         text-transform: uppercase;
         margin: auto 0;
@@ -30,17 +30,17 @@
           display: inline-block;
           position: relative;
           margin: 0 auto;
-          
+
           &::after {
             position: absolute;
-            content: '';
+            content: "";
             bottom: -15px;
             left: 50%;
             width: 0;
             height: 2px;
             background-color: $decoration-clr;
             border-radius: 5px;
-            transition: left .2s, width .2s;
+            transition: left 0.2s, width 0.2s;
           }
         }
 
@@ -83,7 +83,7 @@
       &__element {
         &__link {
           width: 150px;
-          font-size: .8rem;
+          font-size: 0.8rem;
 
           &--center {
             width: 150px;
@@ -101,7 +101,8 @@
         display: none;
         margin: auto 0;
 
-        &:nth-child(3), &:nth-child(6) {
+        &:nth-child(3),
+        &:nth-child(6) {
           display: block;
         }
 
@@ -112,7 +113,7 @@
           font-size: 2rem;
           color: $decoration-clr;
           cursor: pointer;
-          transition: transform .2s ease;
+          transition: transform 0.2s ease;
         }
       }
     }
@@ -123,7 +124,7 @@
     background-color: $banner-clr;
     height: 0;
     overflow: hidden;
-    transition: height .2s ease-out;
+    transition: height 0.2s ease-out;
 
     &__list {
       padding: 1rem 0;
@@ -138,9 +139,9 @@
           color: $text-clr;
           text-decoration: none;
           text-transform: uppercase;
-          font-size: .9rem;
+          font-size: 0.9rem;
           font-weight: 300;
-          letter-spacing: .2rem;
+          letter-spacing: 0.2rem;
         }
 
         &__up-button {
@@ -149,8 +150,8 @@
           text-align: center;
           border: none;
           cursor: pointer;
-          padding-top: .5rem;
-          padding-bottom: .5rem;
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
           font-size: 1.1rem;
         }
       }
