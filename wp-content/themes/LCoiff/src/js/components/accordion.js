@@ -9,19 +9,18 @@ const crosses = document.querySelectorAll(".info-blocks__info-block__plus");
 
 for (let i = 0; i < titres.length; i++) {
   //default value
-  // paragraph[i].style.display = "none";
+
   crosses[i].style.transform = "rotate(0deg)";
   underlines[i].style.width = "100%";
   paragraph[i].style.transform = "translateY(-1500px)";
   paragraph[i].style.maxHeight = "0";
-  console.log(paragraph[i].style.display);
-  console.log(crosses[i].style.transform);
+  paragraph[i].style.opacity = "0";
 
   titres[i].addEventListener("click", () => {
-    // paragraph[i].style.display =
-    //   paragraph[i].style.display === "block" ? "none" : "block";
     paragraph[i].style.maxHeight =
       paragraph[i].style.maxHeight === "100vh" ? "0" : "100vh";
+
+    paragraph[i].style.opacity = paragraph[i].style.opacity === "1" ? "0" : "1";
 
     paragraph[i].style.transform =
       paragraph[i].style.transform === "translateY(0px)"
@@ -35,5 +34,4 @@ for (let i = 0; i < titres.length; i++) {
     underlines[i].style.width =
       underlines[i].style.width === "50%" ? "100%" : "50%";
   });
-  
 }

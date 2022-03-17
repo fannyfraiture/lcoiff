@@ -1,88 +1,80 @@
 .info-blocks {
-  
   padding: 1rem 0 2rem 0;
   max-width: 75%;
   margin: 0 auto;
   overflow: hidden;
-  
-  .show{
+
+  .show {
     display: block;
+  }
+
+  &__info-block {
+    &__tabs {
+      overflow: hidden;
     }
 
-    &__info-block {
-      // position: relative;
-      &__tabs{
-        overflow: hidden;
-
+    &__title {
+      position: relative;
+      z-index: +1;
+      font-size: 2rem;
+      @media screen and (max-width: 400px) {
+        padding-right: 2.4rem;
       }
-      &__title {
-        z-index: +1;
-        position: relative;
-        font-size: 2rem;
-        
-        overflow: hidden;
-      padding:  2rem 0 2rem 0;
-      &__underline{
+      padding: 2rem 0 2rem 0;
+      overflow: hidden;
+      background-color: white;
+
+      &__underline {
         position: absolute;
         bottom: 0;
         width: 100%;
-        height:10px;
+        height: 3px;
         background-color: $banner-clr;
         border-radius: 3px;
         transition: width 0.8s ease-out;
       }
-      
     }
-    
-    .rotate{
-      transform: rotate(45deg);
-    }
+
     &__plus {
       position: absolute;
       right: 20px;
       top: 48px;
       transform-origin: 50% 50%;
       transform: rotate(0deg);
-      transition: all .35s;
+      transition: all 0.35s;
+
       &__cross {
-        // position: relative;
         width: 15px;
-        // height: 25px;
+
         &__hor {
           position: absolute;
           width: 15px;
           height: 2px;
           background-color: $text-clr;
-            
         }
+
         &__ver {
-            width: 15px;
-            height: 2px;
-            background-color: $text-clr;
-            position: absolute;
-            left: calc(0px / 2);
-            transform: rotate(90deg);
-           
-            
-        }   
+          position: absolute;
+          width: 15px;
+          height: 2px;
+          background-color: $text-clr;
+          transform: rotate(90deg);
+        }
       }
     }
+
     &__paragraph {
       transform: translateX(-1500px);
       max-height: 0;
-      // overflow: hidden;
+      opacity: 0;
       line-height: 1.5rem;
       font-weight: 300;
       line-break: strict;
-      z-index: -1;
-     
-      
       font-size: 1rem;
-      margin-top:.1rem;
       padding: 2rem 0 1rem 0;
-      color:black;
-      transition: all .35s;
-      span{
+      color: black;
+      transition: all 0.35s;
+      span {
         font-weight: bold;
       }
     }
