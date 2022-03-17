@@ -10,18 +10,18 @@ function disable_gutenberg_editor()
 
 //   Clean up dashboard
   function my_wpadmin_sidebar_menu() {
-    // remove_menu_page( 'index.php' );  // 'Dashboard'
-  	// remove_menu_page( 'edit.php' );  // 'Posts'
-    //remove_menu_page( 'themes.php' );   // 'Appearance'
-    // remove_menu_page( 'upload.php' );   // 'Media'
-    // remove_menu_page( 'edit-comments.php' );
-    // remove_submenu_page('upload.php','media-new.php'); 
-    // remove_submenu_page('plugins.php','plugin-install.php'); //plugins
-    // remove_submenu_page('plugins.php','plugin-editor.php');
+     remove_menu_page( 'index.php' );  // 'Dashboard'
+  	 remove_menu_page( 'edit.php' );  // 'Posts'
+    remove_menu_page( 'themes.php' );   // 'Appearance'
+    remove_menu_page( 'upload.php' );   // 'Media'
+    remove_menu_page( 'edit-comments.php' );
+    remove_submenu_page('upload.php','media-new.php'); 
+    remove_submenu_page('plugins.php','plugin-install.php'); //plugins
+    remove_submenu_page('plugins.php','plugin-editor.php');
 
 
 }
-// add_action('admin_menu','my_wpadmin_sidebar_menu', 999);
+ add_action('admin_menu','my_wpadmin_sidebar_menu', 999);
 
 
 
