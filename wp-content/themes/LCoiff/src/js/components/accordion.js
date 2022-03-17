@@ -32,6 +32,6 @@ for (let i = 0; i < titres.length; i++) {
         ? "rotate(0deg)"
         : "rotate(45deg)";
     underlines[i].style.width =
-      underlines[i].style.width === "50%" ? "100%" : "50%";
+      underlines[i].style.width === "40%" ? "100%" : "40%";
   });
 }
