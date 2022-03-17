@@ -14,7 +14,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     >
-    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
     <title>L'Coiff</title>
     <?php wp_head(); // required to build the file as a custom header ?>
   </head>
