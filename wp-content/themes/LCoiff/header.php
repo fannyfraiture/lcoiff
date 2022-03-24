@@ -43,7 +43,7 @@
           </li>
 
           <li class="navbar__list__element">
-            <a class="navbar__list__element__link--center" href="/LCoiff">
+            <a class="navbar__list__element__link--center" href="/">
               <img
                 class="navbar__list__element__link--center__logo"
                 src= "<?php echo get_template_directory_uri()?>/src/img/logo_lcoiff_beige.png" 

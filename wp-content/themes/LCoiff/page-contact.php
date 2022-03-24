@@ -54,7 +54,7 @@ get_header();
     </li>
   </ul>
 
-  <a class="contact__info__rs" target="_blank"href="<?php echo esc_url($contact_info["facebook"]); ?>">
+  <a class="contact__info__rs" target="_blank" href="<?php echo esc_url($contact_info["facebook"]); ?>">
   <i class="fa-brands fa-facebook-f"></i>
             Suivez-nous
           </a>

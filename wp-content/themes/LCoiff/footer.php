@@ -17,7 +17,7 @@ $contact_horaire = get_field('contact_horaire', 'option');
         <div class="footer__section__content">
           <img class="footer__section__content__logo" src="<?php echo esc_url($contact_logo['url']); ?>" alt="logo LCoiff'">
 
-          <a class="footer__section__content__link" href="<?php echo $contact_info["facebook"]; ?>">
+          <a class="footer__section__content__link" target="_blank" href="<?php echo $contact_info["facebook"]; ?>">
           <i class="fa-brands fa-facebook-f"></i>
             suivez-nous
           </a>

@@ -7,6 +7,50 @@ html {
     margin: 0 auto;
     width: 100vw;
     max-width: 1920px;
+
+    a {
+      color: $text-clr;
+      text-decoration: none;
+
+      &:active {
+        color: $text-clr;
+        text-decoration: none;
+      }
+      &:visited {
+        color: $text-clr;
+        text-decoration: none;
+      }
+      &:focus {
+        color: $text-clr;
+        text-decoration: none;
+      }
+      &:hover {
+        color: $text-clr;
+        text-decoration: none;
+      }
+    }
+
+    .responsive-menu__list__element__up-button {
+      color: $text-clr;
+      text-decoration: none;
+
+      &:active {
+        color: $text-clr;
+        text-decoration: none;
+      }
+      &:visited {
+        color: $text-clr;
+        text-decoration: none;
+      }
+      &:focus {
+        color: $text-clr;
+        text-decoration: none;
+      }
+      &:hover {
+        color: $text-clr;
+        text-decoration: none;
+      }
+    }
   }
 
   .hidden {
